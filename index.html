@@ -12,19 +12,22 @@
     <title>ATM Project</title>
 </head>
 <header>
-    <img src="" alt="Logo del banco">
+    <img src="assets/logo.png" alt="Logo del banco" width="150px">
     <p>Bienvenido</p>
 </header>
 
 <body>
     <form action="">
-        <label for="usuario"></label>
-        <input type="text">
+        <h1>Login</h1>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="User">
 
-        <label for="Password"></label>
-        <input type="password">
+        <label for="Password">Password</label>
+        <input type="password" name="Pass">
+        <input type="button" value="Ingresar" onclick="login(this.form)">
     </form>
-    
+
+    <script src="js/javascript.js"></script>    
 </body>
 
 <footer>
