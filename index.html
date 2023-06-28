@@ -9,22 +9,28 @@
     <link rel="stylesheet" href="/styles/style.css">
     <script src="/js/javascript.js"></script>
 
-    <title>ATM Project</title>
+    <title>Login</title>
 </head>
-<header>
-    <img src="assets/logo.png" alt="Logo del banco" width="150px">
-    <p>Bienvenido</p>
-</header>
+<!-- <header>
+    <div class="headertop">
+        <img src="assets/logo.png" alt="Logo del banco" width="150px">
+        <p>Bienvenido</p>
+    </div>
+    
+</header> -->
 
 <body>
     <form action="">
         <h1>Login</h1>
-        <label for="usuario">Usuario</label>
-        <input type="text" name="User">
+            <div class="input-group">
+                <label for="usuario">Usuario</label>
+            <input type="text" name="User">
 
-        <label for="Password">Password</label>
-        <input type="password" name="Pass">
-        <input type="button" value="Ingresar" onclick="login(this.form)">
+            <label for="Password">Password</label>
+            <input type="password" name="Pass">
+            <input class="btn" type="button" value="Ingresar" onclick="login(this.form)">
+        
+            </div>
     </form>
 
     <script src="js/javascript.js"></script>    
@@ -35,3 +41,4 @@
 </footer>
 
 </html>
+
