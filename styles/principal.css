@@ -1,6 +1,157 @@
-.center-title {
-    margin-left: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+body{
+  background-color: #caf0f8;
+  background-image: url('../assets/background.webp');
+  background-repeat: no-repeat;
+  background-size: 1600px;
+}
+
+.mdl-layout__header{
+  background-color: #023e8a;
+}
+
+h2{
+  color: #03045e;
+}
+
+.page-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mdl-card{
+  width: max-content;
+  height: max-content;
+}
+
+.cards-container{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.cards-container-titles{
+  display: flex;
+  justify-content: space-around;
+}
+
+.debit-card{
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  width: max-content;
+  height: max-content;
+  align-items: center;
+  justify-items: center;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.card-titles{
+  color: #03045e;
+  font-weight: bold;
+}
+
+.card-details{
+  color: #023e8a;
+}
+
+.card-details:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card-image-container{
+  display: flex;
+  align-items: center;
+}
+
+.card-image{
+  width: 220px;
+  height: fit-content;
+}
+
+.single-card-container{
+  margin: 10px 20px 30px 20px;
+  padding-top: 20px;
+}
+
+.cards-container p{
+  font-size: 20px;
+}
+
+.text-action-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: #03045e;
+}
+
+.text-action{
+  font-size: 16px !important;
+}
+
+.text-action:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.action-form{
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  min-height: 0;
+}
+
+.action-form p{
+  margin: 0;
+}
+
+.historial{
+  display: none;
+  grid-template-columns: repeat(3, auto);
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  min-height: 0;
+  padding-top: 10px;
+}
+
+.historial p{
+  font-size: 16px;
+}
+
+.historial-titles{
+  color: #03045e;
+  font-size: 18px !important;
+}
+
+.historial-show{
+  display: grid;
+}
+
+.bold-text{
+  font-weight: bold;
+}
+
+.mdl-mini-footer{
+  background-color: #023e8a;
+  height: 15px;
+  align-content: space-around;
+}
+
+footer{
+  width: 100%;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  align-self: center;
+  padding-left: 50px;
+}
