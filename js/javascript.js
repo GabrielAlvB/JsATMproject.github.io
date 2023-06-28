@@ -4,12 +4,26 @@ var personas = [
     { nombre: "Pedro", contraseña: "12345" }
   ];
 
+  localStorage.setItem("list",JSON.stringify(personas));
+  
+
+var bienvenida=document.querySelector('#bienvenida');
+
+
+
 function login(form){
     let succesful=true;
-    for(let i=0; i< personas.length;i++){
-        if (form.User.value==personas[i].nombre && 
-            form.Pass.value==personas[i].contraseña) {
+    lst=JSON.parse(localStorage.getItem("list"));
+    for(let i=0; i< lst.length;i++){
+        if (form.User.value==lst[i].nombre && 
+            form.Pass.value==lst[i].contraseña) {
             location= "principal.html";
+            
+            bienvenida=document.querySelector('#bienvenida');
+            console.log(bienvenida.textContent);
+            bienvenida.textContent="Bienvenido a tu cuenta"+lst[i].nombre;
+            console.log(bienvenida.textContent);
+            window.location="principal.html"
             succesful=true;
             break;
         } else {
